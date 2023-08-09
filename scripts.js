@@ -8,28 +8,59 @@ let salesTotal = retailPrice * quantity;
 let profit = salesTotal - (wholesalePrice * quantity);
 
 // Where might this code be used?
-
+This code migth be used to build a POS system for retail companies, frontend backend interface.
 
 // Run this code and log the profit variable in the console. What answer do you get?
-
+213.38
 
 // How would you change this code to make the value of the quanitity variable dynamic?
 
 
 /********************** Exercise 2 - Operators **********************/
 // Step 1: Calculate the sum of two numbers and log the result.
-
+let num1 = 5;
+let num2 = 4;
+let num3 = num1 + num2;
+num3 
+9
+console.log("num3");
+9
 
 // Step 2: Calculate the difference between two numbers and print the result.
+let num4 = num1 % num2;
+num4
+1
+console.log(num4);
 
 
 // Step 3: Calculate the product of two numbers and print the result.
+let num5 = num1 * num2;
+num5
+20
+console.log(num5);
 
+// Step 4: Calculate the result of dividing two numbers and print the result. Handle division by zero. 
 
-// Step 4: Calculate the result of dividing two numbers and print the result. Handle division by zero.
+//(I GOT CARRIED AWAY INTO PERCENTAGE)
+let englishScore = 60;
+let scienceScore = 76;
+let twoScore = englishScore + scienceScore;
+console.log(twoScore);
+let twoSubjectScore = 200;
+console.log(twoSubjectScore);
+
+let twoSubjectTotalScore = twoScore * 100 / twoSubjectScore;
+let twoSubjectPercentage = twoSubjectTotalScore + '%';
+console.log(twoSubjectPercentage);
+68%
 
 
 // Step 5: Check if a given number is even and print the result.
+let checkScore = twoSubjectPercentage
+if (twoSubjectPercentage % 2 === 0) {console.log ("Its Even")};
+else {console.log ("Its Odd")};
+
+ 
 
 
 
@@ -100,33 +131,37 @@ let decimalNumber = 7.8;
 
 
 
-/********************** Exercise 8 - Math Object  **********************/
+/********************** Exercise 8 - Math Object  **********************/ // Done
 // Dice Game
 // Create a variable that stores the value of a random number between 1 and 6
-
+let diceNumber = 6;
 
 // Alert the user of the random number.
 
+alert("random dice roll is: " + diceNumber;
 
 
 
 
-
-/********************** Exercise 9 - NaN  **********************/
+/********************** Exercise 9 - NaN  **********************/ //-- Done
 let result1 = 0 / 0;
 let result2 = "hello" * 5;
 let result3 = parseInt("abc");
 
 // Log the above variables in the console. What is the output?
-
+NaN
 // Without changing the below code, how could you write some new code between the variable declarations and the log, so that the answer is logged to the console? Use JavaScript number tools, please—don't reassign a number directly, as in: `wordVersion = 4`.
 
 let numVersion = 4;
 let wordVersion = 'four';
+let value = numVersion / wordVersion;
 
+value printed out as NaN
 
 
 console.log("Four divided by four is: " + (numVersion / wordVersion))
 
-
 // Look up the isNaN() operator in MDN. What does it do? How would you use it?
+
+The NaN global property is a value representing Not-A-Number.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN
