@@ -1,0 +1,16 @@
+Exercise 1
+// How would you change this code to make the value of the quanitity variable dynamic?
+You wrote:
+userInput = prompt("Enter an amount");
+let dq = parseFloat(userInput);
+console.log(dq);
+
+How would you update this so that the variable, quantity, has the value of the user's response to the prompt?
+
+Exercise 2-4 - Great job!!
+
+Exercise 5
+Remember to define your variable values. You do not have a let or const before creating the variable.
+
+Exercise 6
+Please complete the exercise. Remember, you have to convert the strings into numbers before you can add them.
