@@ -18,12 +18,12 @@ console.log(profit);
 //This code might be used to build a POS system for retail companies, frontend backend interface.
 
 // Run this code and log the profit variable in the console. What answer do you get? 
-console.log($ + profit);
+console.log("$" + profit);
 //213.38;
 
 // How would you change this code to make the value of the quantity variable dynamic?
 
-userInput = prompt("Enter an amount");
+let userInput = prompt("Enter an amount");
 let dq = parseFloat(userInput);
 console.log(dq);
 
@@ -70,10 +70,10 @@ let num = 17;
 num % 2;
 console.log(num % 2);
 // num is odd
-let num2 = 16;
-num2 % 2;
-console.log(num2 % 2);
-// num2 is even
+let num22 = 16;
+num22 % 2;
+console.log(num22 % 2);
+// num22 is even
 
 /********************** Exercise 3 - Decades Calculator **********************/
 // Store your current age into a variable.
@@ -115,23 +115,14 @@ console.log(" The average score for this student is " + averageRatio);
 // Write a calculation that converts celsius to fahrenheit. To get the value of fahrenheit, you have to multiply the celsius value by 9/5 and then add 32.
 
 // Prompt the user for the value of the temperature in celcius.
-userInputCelsius = prompt("enter a temperature in degrees celsius");
+let userInputCelsius = prompt("enter a temperature in degrees celsius");
 
 userInputCelsius = parseFloat(userInputCelsius);
 
-fahrenheit = (userInputCelsius * 9) / 5 + 32;
+let fahrenheit = (userInputCelsius * 9) / 5 + 32;
 
 console.log(userInputCelsius + "°C" + " is equal to " + fahrenheit + "°F");
 
-or 
-if (!isNaN(celsius)) {
-
-  const fahrenheit = (celsius * 9/5) + 32;
-  
-  console.log(`${celsius}°C is equal to ${fahrenheit}°F`);
-  } else {
-  console.log("Invalid input. Please enter a valid number.");
-  }
 
 // Run the code so that the following is logged to the console: 25°C is equal to 77°F
 
@@ -151,8 +142,6 @@ console.log("The sum of the two numbers is " + userNumberTotal);
 userNumberTotal = userNumberInput + userNumberInput2 + 100;
 console.log(userNumberTotal);
 
-or
-
 // Check if the inputs are valid numbers
 //if (!isNaN(input1) && !isNaN(input2)) {
   // Create a new variable and add the numbers
@@ -160,7 +149,9 @@ or
 //console.log(`Addition result: ${result}`);
 
   // Reassign the variable to store the values of the numbers being subtracted
-result = input1 - input2;
+let input1 = "";
+let input2 = "";
+let result = input1 - input2;
 console.log(`Subtraction result: ${result}`);
 
   // Add 100 to the variable
@@ -170,6 +161,8 @@ console.log(`After adding 100: ${result}`);
   // Divide the value of the variable by 20
 result /= 20;
 console.log(`After dividing by 20: ${result}`);
+
+console.log(result);
 
 /********************** Exercise 7 - Math Object  **********************/
 let decimalNumber = 7.8;
@@ -192,7 +185,6 @@ alert("random dice roll is: " + diceNumber);
 let result1 = 0 / 0;
 console.log(result1);
 let result2 = "hello" * 5;
-let result2 = "hello" * 5;
 let result3 = parseInt("abc");
 console.log(result3);
 
@@ -213,10 +205,12 @@ console.log("Four divided by four is: " + numVersion / wordVersion);
 let testVariable = 37;
 isNaN(testVariable);
 
-//The output displayed is "false"
+//The output displayed is false
 
 let testVariable2 = "hello";
 isNaN(testVariable2);
+console.log(testVariable2);
+//The output displayed is true
 
 //The NaN global property is a value representing Not-A-Number. Answer is in link line below:
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN
